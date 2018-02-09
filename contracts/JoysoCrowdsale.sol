@@ -100,7 +100,7 @@ contract JoysoCrowdsale {
   function start() public returns (bool) {
     require (msg.sender == joysoWallet);
     startTime = now;
-    endTime = now + 1 hours;
+    endTime = now + 21 days;
   }
 
   function changeJoysoWallet(address _joysoWallet) public returns (bool) {
