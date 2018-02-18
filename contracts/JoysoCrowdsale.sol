@@ -83,7 +83,7 @@ contract JoysoCrowdsale {
 
   // @return true if crowdsale event has ended
   function hasEnded() public view returns (bool) {
-    bool isEnd = now > endTime || weiRaised == 2000000000000000;
+    bool isEnd = now > endTime || weiRaised >= 10 ** (18 + 4);
     return isEnd;
   }
 
